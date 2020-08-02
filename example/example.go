@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/automobili/echo-pprof"
 	"github.com/labstack/echo/v4"
+	"github.com/zhubby/echo-pprof"
 )
 
 func main() {

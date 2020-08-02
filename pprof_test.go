@@ -40,14 +40,14 @@ func checkRouters(routers []*echo.Route, t *testing.T) {
 	}
 }
 
-// go test github.com/sevenNt/echo-pprof -v -run=TestWrap\$
+// go test github.com/zhubby/echo-pprof -v -run=TestWrap\$
 func TestWrap(t *testing.T) {
 	e := newServer()
 	Wrap(e)
 	checkRouters(e.Routes(), t)
 }
 
-// go test github.com/sevenNt/echo-pprof -v -run=TestWrapGroup\$
+// go test github.com/zhubby/echo-pprof -v -run=TestWrapGroup\$
 func TestWrapGroup(t *testing.T) {
 	for _, prefix := range []string{"/debug"} {
 		e := newServer()
