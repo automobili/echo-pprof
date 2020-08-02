@@ -1,4 +1,4 @@
-module github.com/automobili/echo-pprof
+module github.com/zhubby/echo-pprof
 
 go 1.13
 
